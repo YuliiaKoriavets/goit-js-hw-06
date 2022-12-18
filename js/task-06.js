@@ -1,7 +1,7 @@
 "use strict";
 
 const textInputEl = document.querySelector("#validation-input");
-const lengthEl = Number(textInputEl.getAttribute("data-length"));
+const lengthEl = Number(textInputEl.dataset.length);
 
 const handleBlur = ({ target }) => {
   if (Number(target.value.length) !== lengthEl) {

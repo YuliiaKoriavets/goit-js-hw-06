@@ -11,11 +11,9 @@ const valueEl = document.querySelector("#value");
 buttonMinusOneEl.addEventListener("click", () => {
   counterValue -= 1;
   valueEl.textContent = counterValue;
-  return counterValue;
 });
 
 buttonPlusOneEl.addEventListener("click", () => {
   counterValue += 1;
   valueEl.textContent = counterValue;
-  return counterValue;
 });

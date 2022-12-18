@@ -12,7 +12,7 @@ const ingredients = [
 const ingredientsListEl = document.querySelector("#ingredients");
 const liArrayEl = [];
 
-ingredients.forEach(function (ingredient) {
+ingredients.map((ingredient) => {
   const itemIngredientEl = document.createElement("li");
   itemIngredientEl.classList.add("ingredient__item");
   itemIngredientEl.textContent = ingredient;
